@@ -24,7 +24,7 @@ class SimpleReport:
     @classmethod
     def quantity_product_empresas(cls, items: list[dict]) -> str:
         empresas = [item["nome_da_empresa"] for item in items]
-        return Counter(empresas).most_common(1)[0][0]
+        return Counter(empresas).most_common()[0][0]
 
     @classmethod
     def generate(cls, items: list[dict]) -> str:
