@@ -12,5 +12,11 @@ def test_relatorio_produto():
         "ao abrigo de luz",
     )
 
-    frase = "O produto farinha fabricado em 01-05-2021 por Farinini com validade até 02-06-2023 precisa ser armazenado ao abrigo de luz."
-    assert frase == str(product)
+    srt_product = product.__repr__()
+
+    frase = (
+        "O produto farinha fabricado em 01-05-2021 por Farinini "
+        "com validade até 02-06-2023 precisa ser armazenado ao abrigo de luz."
+    )
+
+    assert frase == srt_product
