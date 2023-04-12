@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 from inventory_report.importer.importer import Importer
 
 
-class XMLImporter(Importer):
+class XmlImporter(Importer):
     @classmethod
     def import_data(cls, path):
         if ".xml" in path:

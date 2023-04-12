@@ -1,15 +1,15 @@
 from inventory_report.reports.simple_report import SimpleReport
 from inventory_report.reports.complete_report import CompleteReport
-from inventory_report.importer.csv_importer import CSVImporter
-from inventory_report.importer.json_importer import JSONImporter
-from inventory_report.importer.xml_importer import XMLImporter
+from inventory_report.importer.csv_importer import CsvImporter
+from inventory_report.importer.json_importer import JsonImporter
+from inventory_report.importer.xml_importer import XmlImporter
 
 
 class Inventory:
     importers = {
-        "csv": CSVImporter,
-        "json": JSONImporter,
-        "xml": XMLImporter,
+        "csv": CsvImporter,
+        "json": JsonImporter,
+        "xml": XmlImporter,
     }
     reports = {"simples": SimpleReport, "completo": CompleteReport}
 
