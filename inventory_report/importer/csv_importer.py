@@ -8,6 +8,5 @@ class CSVImporter(Importer):
         if ".csv" in path:
             with open(path, mode="r") as file:
                 reader = csv.DictReader(file, delimiter=",", quotechar='"')
-                return reader
+                return list(reader)
         raise ValueError("Arquivo inválido")
-

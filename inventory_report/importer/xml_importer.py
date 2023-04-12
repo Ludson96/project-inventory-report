@@ -6,6 +6,14 @@ class XMLImporter(Importer):
     @classmethod
     def import_data(cls, path):
         if ".xml" in path:
-            tree = ET.parse(path)
-            return tree.getroot()
+            with open(path, mode="r") as file:
+                tree = ET.parse(file)
+                root = tree.getroot()
+                data = []
+                for item in root:
+                    item_data = {}
+                    for element in item:
+                        item_data[element.tag] = element.text
+                    data.append(item_data)
+                return data
         raise ValueError("Arquivo inválido")
