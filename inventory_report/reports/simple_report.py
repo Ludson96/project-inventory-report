@@ -28,8 +28,8 @@ class SimpleReport:
 
     @classmethod
     def generate(cls, items: list[dict]) -> str:
-        newest_de_validade = cls.get_newest_validade(items)
         oldest_fabricacao = cls.get_oldest_fabricacao(items)
+        newest_de_validade = cls.get_newest_validade(items)
         empresa_mais_frequente = cls.quantity_product_empresas(items)
         return (
             f"Data de fabricação mais antiga: {oldest_fabricacao}\n"

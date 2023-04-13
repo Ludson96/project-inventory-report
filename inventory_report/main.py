@@ -20,5 +20,6 @@ def main():
     file_extension = path.split(".")[-1]
     report = InventoryRefactor(importers[file_extension])
     reader = report.import_data(path, report_type)
+    # result = reports[report_type].generate(reader)
 
     print(reader, end="")
