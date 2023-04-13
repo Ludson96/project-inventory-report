@@ -18,7 +18,7 @@
 
 ## O que foi desenvolvido
 
-Neste projeto, implementei um gerador de relatórios, utilizando a Programação Orientada a Objetos, que recebe como entrada arquivos com dados de um estoque e gera, como saída, um relatório acerca destes dados, utilizando a Programação Orientada a Objetos!
+Neste projeto, implementei um gerador de relatórios, utilizando a Programação Orientada a Objetos, que recebe como entrada arquivos com dados de um estoque e gera, como saída, um relatório acerca destes dados.
 
 Esses dados de estoque poderão ser obtidos de diversas fontes:
 
