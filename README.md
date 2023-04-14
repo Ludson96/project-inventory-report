@@ -1,4 +1,4 @@
-# Repositório do projeto Inventory Reports 📊
+# Repositório do projeto Inventory Reports 🗃️
 
 ## Módulo: CIÊNCIA DA COMPUTAÇÃO
 
